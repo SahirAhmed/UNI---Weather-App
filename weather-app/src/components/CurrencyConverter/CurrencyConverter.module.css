@@ -1,0 +1,32 @@
+.container {
+  white-space: nowrap;
+  margin: 1rem 0 0 3rem;
+  width: 35rem;
+}
+
+.amount {
+  display: inline-block;
+  width: 10rem;
+}
+
+.value {
+  display: inline-block;
+  padding: 0 1rem;
+  width: 5rem;
+  font-weight: bold;
+}
+
+.swapButton {
+  display: inline-block;
+  vertical-align: middle;
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.swapButton > svg {
+  fill: #aaa;
+  width: 3rem;
+  height: 3rem;
+}

@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  api:
+    container_name: tailwind_api
+    environment:
+      - TAILWIND_API_AIRPORTS_PATH
+      - TAILWIND_API_DEFAULT_RESULTS_LIMIT
+      - TAILWIND_API_OPENEXCHANGERATES_API_KEY
+      - TAILWIND_API_OPENEXCHANGERATES_API_URL
+      - TAILWIND_API_OPENWEATHER_API_KEY
+      - TAILWIND_API_OPENWEATHER_API_URL
+      - TAILWIND_API_PORT=4000
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - '4000'
+
+  client:
+    container_name: tailwind_client
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    ports:
+      - '3000:80'

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrival,
+.departure {
+  display: inline-block;
+  max-width: 10rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pin {
+  width: 4rem;
+  height: 4rem;
+  fill: #b1b1b1;
+}
+
+.active {
+  fill: #955f4a;
+}
+
+.flightPath {
+  display: inline-block;
+  width: 17.5rem;
+  height: 8rem;
+  margin: 0 1.4rem;
+  background-image: url(./flightpathtp.png);
+
+  background-repeat: no-repeat;
+  background-size: 13rem 8rem;
+}

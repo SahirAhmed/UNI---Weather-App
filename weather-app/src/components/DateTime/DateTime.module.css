@@ -1,0 +1,54 @@
+.container {
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.hoursMinutes {
+  display: inline-block;
+  margin: 0 2rem;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.offset,
+.amPm {
+  font-size: 2.5rem;
+  font-style: italic;
+  width: 10rem;
+}
+
+.date,
+.year {
+  font-size: 2.5rem;
+}
+
+.compact .offset,
+.compact .year {
+  display: none;
+}
+
+.compact .hoursMinutes,
+.compact .amPm {
+  margin: 0;
+  font-size: 2em;
+}
+
+.compact .amPm {
+  width: auto;
+  margin-left: 0.3rem;
+  font-style: normal;
+}
+
+.compact .time,
+.compact .date {
+  display: inline-block;
+}
+
+.compact .date {
+  margin-left: 2rem;
+}
